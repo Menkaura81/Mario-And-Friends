@@ -1,6 +1,8 @@
 package dam.aguadulce.aal.marioandfriends;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +10,7 @@ import androidx.core.splashscreen.SplashScreen;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
+import android.app.AlertDialog;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import dam.aguadulce.aal.marioandfriends.databinding.ActivityMainBinding;
@@ -50,6 +53,26 @@ public class MainActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+    }
+
+
+    // Crear el menú de opciones
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu); // Inflar el archivo menu_main.xml
+        return true;
+    }
+
+
+    // Mostrar el Dialog "Acerca de..."
+    private void showAboutDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.about)
+                .setMessage(R.string.about_msg)
+                .setIcon(R.mipmap.ic_launcher)
+                .setPositiveButton("Cerrar", (dialog, which) -> dialog.dismiss())
+                .show();
     }
 
 
@@ -113,6 +136,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (toggle.onOptionsItemSelected(item)) {
+            return true;
+        } else if (item.getItemId() == R.id.menu_about) {
+            showAboutDialog(); // Llamar al método que muestra el Dialog
             return true;
         }
         return super.onOptionsItemSelected(item);

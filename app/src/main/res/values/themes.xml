@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme for Android >=12 -->
-    <style name="Base.Theme.NavigationDrawerJava" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.NavigationDrawerJava" parent="Theme.Material3.DayNight">
 
         <!--        Add this item to disable splash screen-->
         <item name="android:windowSplashScreenBackground">@color/white</item>

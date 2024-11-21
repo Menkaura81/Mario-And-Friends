@@ -51,4 +51,6 @@
     <string name="mushroom_name">Seta Mágica</string>
     <string name="mushroom_description">Superpoder de Mario</string>
     <string name="mushroom_skills">Convierte a Mario en gigante</string>
+    <string name="about">Acerca de...</string>
+    <string name="about_msg">Aplicación desarrollada por Alberto Alarcón.\nVersión 1.0.</string>
 </resources>

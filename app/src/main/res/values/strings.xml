@@ -51,4 +51,6 @@
     <string name="mushroom_name">Mushroom</string>
     <string name="mushroom_description">Mario´s power up</string>
     <string name="mushroom_skills">Makes tiny Mario big</string>
+    <string name="about">About...</string>
+    <string name="about_msg">App developed by Alberto Alarcón.\nVersión 1.0.</string>
 </resources>
