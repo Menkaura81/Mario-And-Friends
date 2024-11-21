@@ -1,0 +1,28 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="dam.aguadulce.aal.marioandfriends.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/configFragment"
+        android:name="dam.aguadulce.aal.marioandfriends.ConfigFragment"
+        android:label="fragment_config"
+        tools:layout="@layout/fragment_config" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="dam.aguadulce.aal.marioandfriends.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="characterName"
+            app:argType="string" />
+        <argument
+            android:name="characterDetails"
+            app:argType="string" />
+    </fragment>
+</navigation>

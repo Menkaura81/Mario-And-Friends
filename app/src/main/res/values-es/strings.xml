@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Mario y Amigos</string>
+    <string name="open_drawer">Abrir menú</string>
+    <string name="close_drawer">Cerrar menú</string>
+    <string name="header_image_desc">Imagen de perfil</string>
+    <string name="username">Nombre de usuario</string>
+
+    <string name="mario_description">Personaje principal de la saga</string>
+    <string name="mario_skills">Salta y lanza bolas de fuego</string>
+    <string name="luigi_description">Hermano de Mario</string>
+    <string name="luigi_skills">Mismas habilidades que Mario</string>
+    <string name="peach_description">Princesa del Reino Champiñón</string>
+    <string name="peach_skills">Es secuestrada fácilmente</string>
+    <string name="toad_description">Asistente de la Princesa Peach</string>
+    <string name="toad_skills">Muy rápido</string>
+    <string name="lakitu_description">Sirviente volador de Bowser</string>
+    <string name="lakitu_skills">Lanza objetos desde su nube</string>
+    <string name="dk_description">Primer enemigo de Mario</string>
+    <string name="dk_skills">Lanza barriles</string>
+    <string name="bowser_description">El archienemigo de Mario y del Reino Champiñón</string>
+    <string name="bowser_skills">Secuestra a la Princesa Peach</string>
+    <string name="yoshi_description">Amigo dragón de Mario</string>
+    <string name="yoshi_skills">Puede cargar con Mario, lanza fuego por la boca</string>
+    <string name="planta_description">Enemigo de Mario, se esconde en las tuberías</string>
+    <string name="planta_skills">Muerde fuertemente</string>
+    <string name="character_list_button">Lista de personajes</string>
+    <string name="snack_bar">Bienvenido al Mundo de Mario</string>
+    <string name="config_button">Configuración</string>
+    <string name="language">Idioma</string>
+    <string name="english">Inglés</string>
+    <string name="spanish">Español</string>
+    <string name="selection">Seleccionaste: </string>
+    <string name="lang_change">Idioma cambiado a Español</string>
+</resources>
