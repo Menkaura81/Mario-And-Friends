@@ -53,4 +53,5 @@
     <string name="mushroom_skills">Makes tiny Mario big</string>
     <string name="about">About...</string>
     <string name="about_msg">App developed by Alberto Alarcón.\nVersión 1.0.</string>
+    <string name="close_about">Close</string>
 </resources>

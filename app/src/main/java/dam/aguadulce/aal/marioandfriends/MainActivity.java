@@ -56,7 +56,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // Crear el menú de opciones
+    /**
+     * Método que crea el menu contextual
+     * @param menu Menu que se crea
+     * @return boolean
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -65,13 +69,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // Mostrar el Dialog "Acerca de..."
+    /**
+     * Método que muestra el dialgoo "Acerca de"
+     */
     private void showAboutDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.about)
                 .setMessage(R.string.about_msg)
-                .setIcon(R.mipmap.ic_launcher)
-                .setPositiveButton("Cerrar", (dialog, which) -> dialog.dismiss())
+                .setIcon(R.drawable.marioandfriends)
+                .setPositiveButton(R.string.close_about, (dialog, which) -> dialog.dismiss())
                 .show();
     }
 
@@ -89,6 +95,23 @@ public class MainActivity extends AppCompatActivity {
         );
         binding.drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+    }
+
+
+    /**
+     * Metodo que maneja los clics en el icono del menu
+     * @param item menu
+     * @return
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (toggle.onOptionsItemSelected(item)) {
+            return true;
+        } else if (item.getItemId() == R.id.menu_about) { // Para que diferencie el drawer del contextual
+            showAboutDialog(); // Mostrar el Dialog
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 
@@ -125,23 +148,6 @@ public class MainActivity extends AppCompatActivity {
             navController.navigate(R.id.detailFragment, bundle);
         });
 
-    }
-
-
-    /**
-     * Metodo que maneja los clics en el icono del menu
-     * @param item menu
-     * @return
-     */
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (toggle.onOptionsItemSelected(item)) {
-            return true;
-        } else if (item.getItemId() == R.id.menu_about) {
-            showAboutDialog(); // Llamar al método que muestra el Dialog
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 
