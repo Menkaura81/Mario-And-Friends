@@ -49,9 +49,13 @@ public class HomeFragment extends Fragment {
                 new Character(R.drawable.toad, getString(R.string.toad_name), getString(R.string.toad_description), getString(R.string.toad_skills)),
                 new Character(R.drawable.lakitu, getString(R.string.lakitu_name), getString(R.string.lakitu_description), getString(R.string.lakitu_skills)),
                 new Character(R.drawable.dkong, getString(R.string.kong_name), getString(R.string.dk_description), getString(R.string.dk_skills)),
-                new Character(R.drawable.bowser, getString(R.string.bowser_name), getString(R.string.bowser_description), getString(R.string.bowser_skills)),
                 new Character(R.drawable.yoshi, getString(R.string.yoshi_name), getString(R.string.yoshi_description), getString(R.string.yoshi_skills)),
-                new Character(R.drawable.planta, getString(R.string.plant_name), getString(R.string.planta_description), getString(R.string.planta_skills))
+                new Character(R.drawable.paratroopa, getString(R.string.paratroopa_name), getString(R.string.paratroopa_description), getString(R.string.paratroopa_skills)),
+                new Character(R.drawable.bowser, getString(R.string.bowser_name), getString(R.string.bowser_description), getString(R.string.bowser_skills)),
+                new Character(R.drawable.planta, getString(R.string.plant_name), getString(R.string.planta_description), getString(R.string.planta_skills)),
+                new Character(R.drawable.bullet, getString(R.string.bullet_name), getString(R.string.bullet_description), getString(R.string.bullet_skills)),
+                new Character(R.drawable.star, getString(R.string.star_name), getString(R.string.star_description), getString(R.string.star_skills) ),
+                new Character(R.drawable.mushroom, getString(R.string.mushroom_name), getString(R.string.mushroom_description), getString(R.string.mushroom_skills))
         ));
 
         // Configurar el adaptador con el listener

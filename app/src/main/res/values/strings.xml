@@ -39,4 +39,16 @@
     <string name="yoshi_name">Yoshi</string>
     <string name="plant_name">Piranha Plant</string>
     <string name="mario_and_friends">Mario and Friends</string>
+    <string name="bullet_name">Bullet</string>
+    <string name="bullet_description">Mario´s enemy, flies towards him</string>
+    <string name="bullet_skills">Very strong</string>
+    <string name="paratroopa_name">Paratroopa</string>
+    <string name="paratroopa_description">Mario´s flying enemy</string>
+    <string name="paratroopa_skills">Can fly</string>
+    <string name="star_name">Star</string>
+    <string name="star_description">Mario´s power up</string>
+    <string name="star_skills">Makes Mario invincible</string>
+    <string name="mushroom_name">Mushroom</string>
+    <string name="mushroom_description">Mario´s power up</string>
+    <string name="mushroom_skills">Makes tiny Mario big</string>
 </resources>

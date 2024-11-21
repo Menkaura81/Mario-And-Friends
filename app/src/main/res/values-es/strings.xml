@@ -39,4 +39,16 @@
     <string name="yoshi_name">Yoshi</string>
     <string name="plant_name">Planta Piraña</string>
     <string name="mario_and_friends">Mario y amigos</string>
+    <string name="bullet_name">Bala</string>
+    <string name="bullet_description">Enemigo de Mario, vuela hacia el</string>
+    <string name="bullet_skills">Es muy fuerte</string>
+    <string name="paratroopa_name">Paratroopa</string>
+    <string name="paratroopa_description">Enemigo volador de Mario</string>
+    <string name="paratroopa_skills">Puede volar</string>
+    <string name="star_name">Estrella</string>
+    <string name="star_description">Superpoder de Mario</string>
+    <string name="star_skills">Convierte a Mario en invencible</string>
+    <string name="mushroom_name">Seta Mágica</string>
+    <string name="mushroom_description">Superpoder de Mario</string>
+    <string name="mushroom_skills">Convierte a Mario en gigante</string>
 </resources>
