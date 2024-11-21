@@ -1,15 +1,9 @@
 package dam.aguadulce.aal.marioandfriends;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -17,16 +11,22 @@ import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import dam.aguadulce.aal.marioandfriends.databinding.ActivityMainBinding;
-import dam.aguadulce.aal.marioandfriends.databinding.CardviewBinding;
-import dam.aguadulce.aal.marioandfriends.databinding.FragmentHomeBinding;
 
+
+/**
+ * Clase que implementa la actividad principal de la aplicación
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ActionBarDrawerToggle toggle;
     private ActivityMainBinding binding;
     private NavController navController;
-    private CardviewBinding bindingCardview;
 
+
+    /**
+     * Método que gestiona la creación de la actividad
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SplashScreen.installSplashScreen(this);
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
 
         // Obtener el NavController desde el NavHostFragment
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -53,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    /**
+     * Método que configura el drawer
+     */
     private void configureToggleMenu() {
         // Configurar el ActionBarDrawerToggle
         toggle = new ActionBarDrawerToggle(
@@ -65,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
     }
 
+
+    /**
+     * Método que configura la navegacion entre los distintos fragmentos y menus de la aplicación
+     */
     private void configureNavigation() {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
@@ -92,21 +99,30 @@ public class MainActivity extends AppCompatActivity {
             bundle.putString("characterSkills", characterSkills); // Habilidades
             bundle.putInt("characterImage", characterImage); // Imagen
 
-
             navController.navigate(R.id.detailFragment, bundle);
         });
 
     }
 
+
+    /**
+     * Metodo que maneja los clics en el icono del menu
+     * @param item menu
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Manejar clics en el icono del menú
         if (toggle.onOptionsItemSelected(item)) {
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
+
+    /**
+     * Método que controla la navegacion del drawer
+     * @return
+     */
     @Override
     public boolean onSupportNavigateUp() {
         Fragment navHostFragment = getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
@@ -117,5 +133,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onSupportNavigateUp();
     }
-
 }

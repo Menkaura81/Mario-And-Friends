@@ -1,18 +1,24 @@
 package dam.aguadulce.aal.marioandfriends;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 
+/**
+ * Clase que implementa una pantalla splash para dispositivos antiguos no compatibles
+ */
 public class SplashActivity extends AppCompatActivity {
 
     private static final int SPLASH_TIME_OUT = 3000; // 3 segundos para la Splash
 
+
+    /**
+     * Método para mostrar la splash screen en dispositivos antiguos
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <!-- MainActivity, que se lanza después de la Splash -->
+        <!-- La MainActivity se lanza después de la splash -->
         <activity android:name=".MainActivity"/>
     </application>
 

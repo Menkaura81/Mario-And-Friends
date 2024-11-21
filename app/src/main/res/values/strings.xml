@@ -3,8 +3,6 @@
     <string name="open_drawer">Open menu</string>
     <string name="close_drawer">Close menu</string>
     <string name="header_image_desc">Profile image</string>
-    <string name="username">Username</string>
-
     <string name="mario_description">Main character of the saga</string>
     <string name="mario_skills">Jumps and throws fireballs</string>
     <string name="luigi_description">Mario´s brother</string>
@@ -31,4 +29,14 @@
     <string name="spanish">Spanish</string>
     <string name="selection">You selected: </string>
     <string name="lang_change">Language changed to English</string>
+    <string name="mario_name">Mario</string>
+    <string name="luigi_name">Luigi</string>
+    <string name="peach_name">Peach</string>
+    <string name="toad_name">Toad</string>
+    <string name="lakitu_name">Lakitu</string>
+    <string name="kong_name">Donkey Kong</string>
+    <string name="bowser_name">Bowser</string>
+    <string name="yoshi_name">Yoshi</string>
+    <string name="plant_name">Piranha Plant</string>
+    <string name="mario_and_friends">Mario and Friends</string>
 </resources>

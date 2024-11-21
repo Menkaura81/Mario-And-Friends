@@ -19,13 +19,11 @@
         android:id="@+id/header_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mario and Friends"
+        android:text="@string/mario_and_friends"
         android:textColor="@android:color/white"
         android:textSize="28sp"
         android:layout_marginTop="8dp"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"/>
-
-
 
 </LinearLayout>

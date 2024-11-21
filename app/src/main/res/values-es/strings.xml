@@ -2,9 +2,7 @@
     <string name="app_name">Mario y Amigos</string>
     <string name="open_drawer">Abrir menú</string>
     <string name="close_drawer">Cerrar menú</string>
-    <string name="header_image_desc">Imagen de perfil</string>
-    <string name="username">Nombre de usuario</string>
-
+    <string name="header_image_desc">Profile image</string>
     <string name="mario_description">Personaje principal de la saga</string>
     <string name="mario_skills">Salta y lanza bolas de fuego</string>
     <string name="luigi_description">Hermano de Mario</string>
@@ -31,4 +29,14 @@
     <string name="spanish">Español</string>
     <string name="selection">Seleccionaste: </string>
     <string name="lang_change">Idioma cambiado a Español</string>
+    <string name="mario_name">Mario</string>
+    <string name="luigi_name">Luigi</string>
+    <string name="peach_name">Peach</string>
+    <string name="toad_name">Toad</string>
+    <string name="lakitu_name">Lakitu</string>
+    <string name="kong_name">Donkey Kong</string>
+    <string name="bowser_name">Bowser</string>
+    <string name="yoshi_name">Yoshi</string>
+    <string name="plant_name">Planta Piraña</string>
+    <string name="mario_and_friends">Mario y amigos</string>
 </resources>
